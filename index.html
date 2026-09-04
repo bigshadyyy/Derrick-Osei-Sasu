@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Derrick Osei Sasu — Materials Engineering, basketball, music, finance and the things that make me who I am.">
+  <title>Derrick Osei Sasu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#f5f3ee;--surface:#fff;--text:#111318;--muted:#666a72;--line:#deddd6;--accent:#234b3a;--dark:#111511;--max:1140px}
+    *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+    body{font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+    a{color:inherit;text-decoration:none}.wrap{width:min(92%,var(--max));margin:auto}
+    nav{position:sticky;top:0;z-index:20;background:rgba(245,243,238,.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+    .nav{height:76px;display:flex;align-items:center;justify-content:space-between}.logo{font:700 1.25rem "Space Grotesk";letter-spacing:-.05em}.logo span{color:var(--accent)}
+    .links{display:flex;gap:28px;color:var(--muted);font-size:.92rem}.links a:hover{color:var(--text)}
+    .hero{min-height:calc(100vh - 76px);display:grid;grid-template-columns:1.12fr .88fr;gap:65px;align-items:center;padding:75px 0}
+    .eyebrow{font-size:.75rem;text-transform:uppercase;letter-spacing:.15em;font-weight:700;color:var(--accent);margin-bottom:20px}
+    h1,h2,h3{font-family:"Space Grotesk";letter-spacing:-.055em}
+    h1{font-size:clamp(3.5rem,7.5vw,7.1rem);line-height:.9;max-width:800px}
+    h1 em{font-style:normal;color:var(--accent)}
+    .hero p{max-width:650px;color:var(--muted);font-size:1.12rem;margin-top:28px}
+    .actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}.btn{border:1px solid var(--text);border-radius:999px;padding:12px 19px;font-weight:700}.btn.dark{background:var(--text);color:#fff}.btn:hover{transform:translateY(-2px)}
+    .photo-wrap{background:#dfe8e1;padding:18px;border-radius:34px;transform:rotate(2deg);max-width:440px;justify-self:end}.photo-wrap img{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:23px}.photo-caption{padding:17px 7px 3px;color:#4c6557;font-size:.86rem}
+    section{padding:105px 0}.section-head{display:grid;grid-template-columns:.6fr 1fr;gap:55px;margin-bottom:46px}.number{font-size:.8rem;font-weight:700;color:var(--accent)}h2{font-size:clamp(2.5rem,5vw,4.4rem);line-height:.95}.intro{color:var(--muted);font-size:1.05rem;max-width:650px;margin-top:17px}
+    .identity{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.tile{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:30px;min-height:230px}.tile .icon{font-size:1.8rem;margin-bottom:35px}.tile h3{font-size:1.45rem;margin-bottom:9px}.tile p{color:var(--muted)}
+    .work{display:grid;grid-template-columns:1fr 1fr;gap:17px}.card{border-radius:25px;padding:32px;min-height:310px;display:flex;flex-direction:column;justify-content:space-between;background:var(--dark);color:#fff}.card:nth-child(2){background:#e4e9e5;color:var(--text)}.card:nth-child(3){background:#e9e3d8;color:var(--text)}.card:nth-child(4){background:#202420;color:#fff}
+    .tag{font-size:.73rem;text-transform:uppercase;letter-spacing:.13em;font-weight:700;opacity:.62}.card h3{font-size:2rem;line-height:1.03;margin:15px 0}.card p{opacity:.72;max-width:520px}.card .bottom{font-size:.76rem;text-transform:uppercase;letter-spacing:.1em;font-weight:700;opacity:.62}
+    .court-section{background:#e8e3d8}.court-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch}.court-copy{background:var(--dark);color:#fff;border-radius:25px;padding:34px;display:flex;flex-direction:column;justify-content:space-between}.court-copy h3{font-size:2.7rem;line-height:.95;margin:14px 0}.court-copy p{color:#bfc6c0;max-width:500px}.jersey{font:700 5rem "Space Grotesk";letter-spacing:-.08em;color:#fff;opacity:.92}.court{position:relative;min-height:390px;border-radius:25px;background:#b88a5b;overflow:hidden;border:9px solid #fff;box-shadow:inset 0 0 0 2px rgba(0,0,0,.2)}.court:before{content:"";position:absolute;inset:0;border:3px solid rgba(255,255,255,.9)}.half{position:absolute;left:50%;top:0;bottom:0;border-left:3px solid rgba(255,255,255,.9)}.circle{position:absolute;width:115px;height:115px;border:3px solid rgba(255,255,255,.9);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}.key{position:absolute;top:50%;left:0;width:110px;height:190px;border:3px solid rgba(255,255,255,.9);border-left:0;transform:translateY(-50%)}.key.right{left:auto;right:0;border-left:3px solid rgba(255,255,255,.9);border-right:0}.arc{position:absolute;width:190px;height:190px;border:3px solid rgba(255,255,255,.9);border-radius:50%;left:-70px;top:50%;transform:translateY(-50%)}.arc.right{left:auto;right:-70px}.hoop{position:absolute;width:15px;height:15px;border:3px solid rgba(255,255,255,.95);border-radius:50%;left:92px;top:50%;transform:translate(-50%,-50%)}.hoop.right{left:auto;right:92px}.music{background:#171917;color:#fff}.music .number{color:#9fc1ac}.music .intro{color:#b8beb9}.music h2{max-width:700px}.artists{display:flex;flex-wrap:wrap;gap:11px;margin-top:35px}.artist{border:1px solid #3a403b;border-radius:999px;padding:11px 16px;font-weight:600;color:#dce2dd}
+    .timeline{border-top:1px solid var(--line)}.row{display:grid;grid-template-columns:170px 1fr;gap:35px;padding:27px 0;border-bottom:1px solid var(--line)}.row .date{color:var(--muted);font-size:.9rem}.row h3{font-size:1.35rem;margin-bottom:5px}.row p{color:var(--muted)}
+    .contact{background:var(--dark);color:#fff;border-radius:32px;padding:62px;display:flex;justify-content:space-between;gap:40px;align-items:end}.contact h2{max-width:700px}.contact p{color:#b9c0ba;max-width:620px;margin-top:18px}.contact .btn{border-color:#fff}
+    footer{padding:31px 0 45px;color:var(--muted);font-size:.86rem;display:flex;justify-content:space-between}
+    @media(max-width:800px){.links{display:none}.hero,.section-head,.identity,.work,.court-grid{grid-template-columns:1fr}.photo-wrap{justify-self:center;width:100%;max-width:400px}.section-head{gap:20px}.row{grid-template-columns:1fr;gap:4px}.contact{padding:40px 27px;display:block}.court{min-height:300px}.court-copy h3{font-size:2.2rem}footer{display:block}footer span{display:block;margin-top:5px}}
+  </style>
+</head>
+<body>
+<nav><div class="wrap nav"><a class="logo" href="#home">Derrick<span>.</span></a><div class="links"><a href="#about">About</a><a href="#work">What I Do</a><a href="#music">Music</a><a href="#journey">Journey</a><a href="#contact">Contact</a></div></div></nav>
+
+<main id="home">
+<section class="wrap hero">
+  <div>
+    <div class="eyebrow">Materials Engineering · Basketball · Music · Finance</div>
+    <h1>I'm more than <em>my major.</em></h1>
+    <p>I'm Derrick Osei Sasu. I study Materials Science and Engineering, but there's a lot more to me than what's on my transcript. I play basketball, I'm always looking for good music, I'm interested in finance and business, and I'm figuring out what I want to build with all of it.</p>
+    <div class="actions"><a class="btn dark" href="#about">Get to know me</a><a class="btn" href="#contact">Connect</a></div>
+  </div>
+  <div class="photo-wrap"><img src="assets/portrait.png" alt="Portrait of Derrick Osei Sasu"><div class="photo-caption">Student. Hooper. Music lover. Future engineer. Always learning.</div></div>
+</section>
+
+<section id="about"><div class="wrap">
+  <div class="section-head"><div><div class="number">01 — WHO I AM</div></div><div><h2>A few sides of me.</h2><p class="intro">I don't really like putting myself in one box. Engineering is what I'm studying, but curiosity shows up in a lot of different places.</p></div></div>
+  <div class="identity">
+    <article class="tile"><div class="icon">⚙</div><h3>Engineering</h3><p>Materials science, characterization, problem solving and understanding what makes materials behave the way they do.</p></article>
+    <article class="tile"><div class="icon">🏀</div><h3>Basketball</h3><p>I play because I'm good at it. I wear <strong>#24</strong>, and yeah, the number is part of the personality.</p></article>
+    <article class="tile"><div class="icon">◒</div><h3>Finance</h3><p>I'm interested in money, markets, investing, business and understanding how financial decisions actually work.</p></article>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <div class="section-head"><div><div class="number">02 — WHAT I'M INTO</div></div><div><h2>Different interests. Same curiosity.</h2><p class="intro">Whether I'm looking at a microstructure, breaking down a finance concept or working on my game, I like understanding the why behind things.</p></div></div>
+  <div class="work">
+    <article class="card"><div><div class="tag">Materials</div><h3>Seeing what others can't see.</h3><p>I'm particularly interested in materials characterization and using techniques like SEM to connect microstructure to material behaviour.</p></div><div class="bottom">Research · Characterization</div></article>
+    <article class="card"><div><div class="tag">Basketball · #24</div><h3>I'm good. Let's just start there.</h3><p>Basketball is competition, confidence and fun for me. I play, I compete and I enjoy being on the court.</p></div><div class="bottom">Hooper · Competition · #24</div></article>
+    <article class="card"><div><div class="tag">Finance</div><h3>Learning how money moves.</h3><p>I'm interested in investing, companies, financial statements, markets and the decisions behind creating and growing wealth.</p></div><div class="bottom">Markets · Business · Investing</div></article>
+    <article class="card"><div><div class="tag">Building</div><h3>I'm figuring out what's next.</h3><p>Engineering, business, technology and research all interest me. I'm open to discovering where those interests eventually meet.</p></div><div class="bottom">Curiosity · Opportunity</div></article>
+  </div>
+</div></section>
+
+
+<section class="court-section"><div class="wrap">
+  <div class="section-head"><div><div class="number">03 — ON THE COURT</div></div><div><h2>#24 is taken.</h2><p class="intro">A little corner of the site for the other side of me. No engineering lecture here — just basketball.</p></div></div>
+  <div class="court-grid">
+    <div class="court-copy"><div><div class="tag">BASKETBALL</div><h3>Good game.<br>Good energy.</h3><p>I play basketball because I genuinely enjoy it. Competitive, confident and always ready to run a game.</p></div><div class="jersey">24</div></div>
+    <div class="court"><div class="half"></div><div class="circle"></div><div class="key"></div><div class="key right"></div><div class="arc"></div><div class="arc right"></div><div class="hoop"></div><div class="hoop right"></div></div>
+  </div>
+</div></section>
+
+<section id="music" class="music"><div class="wrap">
+  <div class="section-head"><div><div class="number">04 — SOUNDTRACK</div></div><div><h2>Good music is part of the personality.</h2><p class="intro">My rotation leans toward hip-hop and artists who have their own sound. If the music is good, I'm listening.</p></div></div>
+  <div class="artists"><span class="artist">Kanye West</span><span class="artist">Drake</span><span class="artist">Kendrick Lamar</span><span class="artist">Future</span><span class="artist">A$AP Rocky</span><span class="artist">21 Savage</span><span class="artist">Burna Boy</span><span class="artist">+ more</span></div>
+</div></section>
+
+<section id="journey"><div class="wrap">
+  <div class="section-head"><div><div class="number">05 — THE JOURNEY</div></div><div><h2>Still becoming.</h2><p class="intro">I'm a student now, but I'm thinking beyond the classroom and building the skills, experiences and relationships that will matter later.</p></div></div>
+  <div class="timeline">
+    <div class="row"><div class="date">Right now</div><div><h3>Materials Science & Engineering</h3><p>Studying at the University of Ghana and developing a foundation across materials, mechanics, thermodynamics, transport and characterization.</p></div></div>
+    <div class="row"><div class="date">Outside class</div><div><h3>Basketball, music & finance</h3><p>Keeping a life outside academics matters to me. These interests give me different ways to think, compete, relax and learn.</p></div></div>
+    <div class="row"><div class="date">Next</div><div><h3>Research, industry & opportunity</h3><p>Looking for opportunities where I can learn from good people, work on meaningful problems and keep growing.</p></div></div>
+  </div>
+</div></section>
+
+<section id="contact"><div class="wrap"><div class="contact">
+  <div><div class="eyebrow" style="color:#9fc4ae">06 — SAY HELLO</div><h2>Let's talk about something interesting.</h2><p>Engineering, basketball, music, finance, projects or just a good idea. I'm always open to a conversation.</p></div>
+  <div class="actions"><a class="btn dark" href="mailto:derricksasu@icloud.com">Email me</a><a class="btn" href="assets/Derrick-Osei-Sasu-CV.pdf" target="_blank">View CV</a><a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></div>
+</div></div></section>
+</main>
+<footer class="wrap"><span>© 2026 Derrick Osei Sasu</span><span>Materials Science & Engineering · Ghana</span></footer>
+</body>
+</html>
